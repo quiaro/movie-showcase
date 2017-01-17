@@ -1,0 +1,25 @@
+{
+  "name": "favorite-movies",
+  "version": "0.0.1",
+  "description": "Small project to showcase a list of selected movies",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp build && python src/py/entertainment_center.py",
+    "dev": "gulp"
+  },
+  "keywords": [],
+  "author": "David Q",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.14.0",
+    "browser-sync": "^2.14.0",
+    "eslint": "^3.7.1",
+    "gulp": "3.9.0",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-eslint": "^3.0.1",
+    "gulp-sass": "^2.3.2"
+  }
+}

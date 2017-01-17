@@ -1,0 +1,84 @@
+{
+  "movies": [
+    {
+        "title": "Snatch",
+        "trailer_youtube_url": "https://www.youtube.com/watch?v=Q8jbt0wBkMI",
+        "poster_image_url": "http://www.dvdsreleasedates.com/posters/800/S/Snatch.-movie-poster.jpg"
+    },
+    {
+        "title": "The Grand Budapest Hotel",
+        "trailer_youtube_url": "https://www.youtube.com/watch?v=1Fg5iWmQjwk",
+        "poster_image_url": "https://images-na.ssl-images-amazon.com/images/M/MV5BMzM5NjUxOTEyMl5BMl5BanBnXkFtZTgwNjEyMDM0MDE@._V1_UY1200_CR90,0,630,1200_AL_.jpg"
+    },
+    {
+        "title": "Les Misérables",
+        "trailer_youtube_url": "https://www.youtube.com/watch?v=JhhsylxYafE",
+        "poster_image_url": "http://www.impawards.com/1998/posters/les_miserables_ver2.jpg"
+    },
+    {
+        "title": "American Beauty",
+        "trailer_youtube_url": "https://www.youtube.com/watch?v=CQH51MGFwpY",
+        "poster_image_url": "https://commstudentako.files.wordpress.com/2015/08/american-beauty-movie-cover.jpg?w=640"
+    },
+    {
+        "title": "Fight Club",
+        "trailer_youtube_url": "https://www.youtube.com/watch?v=SUXWAEX2jlg",
+        "poster_image_url": "https://moviemaster1703.files.wordpress.com/2010/12/fight-club-movie-poster-1020270798.jpg"
+    },
+    {
+        "title": "Braveheart",
+        "trailer_youtube_url": "https://www.youtube.com/watch?v=wj0I8xVTV18",
+        "poster_image_url": "http://www.impawards.com/1995/posters/braveheart.jpg"
+    },
+    {
+        "title": "El Laberinto del Fauno",
+        "trailer_youtube_url": "https://www.youtube.com/watch?v=gpEh4O8Hb5Y",
+        "poster_image_url": "http://pics.filmaffinity.com/el_laberinto_del_fauno-222302534-large.jpg"
+    },
+    {
+        "title": "Anchorman",
+        "trailer_youtube_url": "https://www.youtube.com/watch?v=-T3wnP91OnI",
+        "poster_image_url": "https://upload.wikimedia.org/wikipedia/en/6/64/Movie_poster_Anchorman_The_Legend_of_Ron_Burgundy.jpg"
+    },
+    {
+        "title": "Lock, Stock & Two Smoking Barrels",
+        "trailer_youtube_url": "https://www.youtube.com/watch?v=h6hZkvrFIj0",
+        "poster_image_url": "http://assets.flicks.co.nz/images/movies/poster/b6/b6f8dc086b2d60c5856e4ff517060392_500x735.jpg"
+    },
+    {
+        "title": "Shutter Island",
+        "trailer_youtube_url": "https://www.youtube.com/watch?v=5iaYLCiq5RM",
+        "poster_image_url": "https://upload.wikimedia.org/wikipedia/en/7/76/Shutterislandposter.jpg"
+    },
+    {
+        "title": "The Wolf of Wall Street",
+        "trailer_youtube_url": "https://www.youtube.com/watch?v=idAVRvQeYAE",
+        "poster_image_url": "http://www.impawards.com/2013/posters/wolf_of_wall_street_ver3.jpg"
+    },
+    {
+        "title": "Awakenings",
+        "trailer_youtube_url": "https://www.youtube.com/watch?v=JAz-prw_W2A",
+        "poster_image_url": "http://www.impawards.com/1990/posters/awakenings.jpg"
+    },
+    {
+        "title": "Zootopia",
+        "trailer_youtube_url": "https://www.youtube.com/watch?v=jWM0ct-OLsM",
+        "poster_image_url": "http://www.impawards.com/2016/posters/zootopia_ver3_xxlg.jpg"
+    },
+    {
+        "title": "Patch Adams",
+        "trailer_youtube_url": "https://www.youtube.com/watch?v=lZqGA1ldvYE",
+        "poster_image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/d/df/Patch_Adams.jpg/220px-Patch_Adams.jpg"
+    },
+    {
+        "title": "La Vita è Bella",
+        "trailer_youtube_url": "https://www.youtube.com/watch?v=cUiyXxvY9_E",
+        "poster_image_url": "https://s-media-cache-ak0.pinimg.com/736x/06/59/8e/06598e4ed96b3d577aae62781304588d.jpg"
+    },
+    {
+        "title": "Get Him to the Greek",
+        "trailer_youtube_url": "https://www.youtube.com/watch?v=Nadp60OP4D4",
+        "poster_image_url": "http://cdn.collider.com/wp-content/uploads/get-him-to-the-greek-movie-poster1.jpg"
+    }
+  ]
+}
