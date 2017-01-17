@@ -1,7 +1,7 @@
-Movie Trailer Website
+Movie Trailer Site
 =====================
 
-Program to view a curated list of movies and watch their trailers.
+Demo project to view a list of movies and watch their trailers.
 
 ---
 
@@ -17,10 +17,14 @@ Program to view a curated list of movies and watch their trailers.
 
 ## Setup
 Clone this repo to a folder in your computer.
-`$ git clone `
+```
+$ git clone https://github.com/quiaro/movie-showcase.git
+```
 
 Install project dependencies.
-`$ npm install`
+```
+$ npm install
+```
 
 ---
 
@@ -28,18 +32,16 @@ Install project dependencies.
 Make sure you have python 2 installed.
 
 Go to the project directory.
-`$ cd movie-trailer`
+`$ cd movie-showcase`
 
-Build the project.
-`$ python entertainment_center.py`
-
-This program should open a local HTML file in your default browser with the curated list of movies.
+Build the project. This should automatically open a local HTML file in your default browser with a selected list of movies. Enjoy!
+`$ npm run build`
 
 ---
 
 ## Credits
 
-- ["Coverflow animation using CSS3 3D Transformations"](https://jbkflex.wordpress.com/2012/02/13/coverflow-animation-using-css3-3d-transformations-part1/) by Joseph Khan
+- Drew lots of inspiration from ["Coverflow animation using CSS3 3D Transformations"](https://jbkflex.wordpress.com/2012/02/13/coverflow-animation-using-css3-3d-transformations-part1/) by Joseph Khan
 
 ---
 
