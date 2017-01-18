@@ -3,6 +3,8 @@ Movie Trailer Site
 
 Demo project to view a list of movies and watch their trailers.
 
+Tested on Chrome, Safari & Firefox.
+
 ---
 
 ## Features
@@ -45,7 +47,7 @@ $ npm run build
 
 ## Credits
 
-- Drew inspiration from ["Coverflow animation using CSS3 3D Transformations"](https://jbkflex.wordpress.com/2012/02/13/coverflow-animation-using-css3-3d-transformations-part1/) by Joseph Khan
+- Thanks to Joseph Khan for his ["coverflow ideas"](https://jbkflex.wordpress.com/2012/02/13/coverflow-animation-using-css3-3d-transformations-part1/)
 
 ---
 
