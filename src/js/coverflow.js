@@ -16,33 +16,33 @@
  */
 function Coverflow(elId, options) {
 
-  let root = document.getElementById(elId);
+    let root = document.getElementById(elId);
 
-  if (!root) {
-    console.error(`Element #${elId} not found. Unable to initialize coverflow display.`);
-    return;
-  }
+    if (!root) {
+        console.error(`Element #${elId} not found. Unable to initialize coverflow display.`);
+        return;
+    }
 
-  this.root = root;
-  this.images = root.getElementsByTagName('img');
+    this.root = root;
+    this.images = root.getElementsByTagName('img');
 
-  if (!this.images.length) {
-    console.error(`No images found in element #${elId}. Unable to initialize coverflow display.`);
-    return;
-  }
+    if (!this.images.length) {
+        console.error(`No images found in element #${elId}. Unable to initialize coverflow display.`);
+        return;
+    }
 
-  // Instance default option values
-  var defaults = {
-    angleInactive: 70,
-    centerGap: 120,
-    current: Math.floor(this.images.length / 2),   // The middle image will be set to display by default
-    gap: 30,
-    zActive: 200
-  };
+    // Instance default option values
+    var defaults = {
+        angleInactive: 70,
+        centerGap: 120,
+        current: Math.floor(this.images.length / 2), // The middle image will be set to display by default
+        gap: 30,
+        zActive: 200
+    };
 
-  this.settings = Object.assign({}, defaults, options);
-  console.info(`New instance of coverflow display with ${this.images.length} images`);
-  console.info('Coverflow settings: ', this.settings);
+    this.settings = Object.assign({}, defaults, options);
+    console.info(`New instance of coverflow display with ${this.images.length} images`);
+    console.info('Coverflow settings: ', this.settings);
 }
 
 /*
@@ -50,7 +50,7 @@ function Coverflow(elId, options) {
  * Get reference to image currently selected (zero-indexed)
  */
 Coverflow.prototype.getCurrentImage = function() {
-  return this.images[this.settings.current];
+    return this.images[this.settings.current];
 }
 
 /*
@@ -58,7 +58,7 @@ Coverflow.prototype.getCurrentImage = function() {
  * Get index to the currently selected image (zero-indexed)
  */
 Coverflow.prototype.getCurrentIndex = function() {
-  return this.settings.current;
+    return this.settings.current;
 }
 
 /*
@@ -66,33 +66,33 @@ Coverflow.prototype.getCurrentIndex = function() {
  * Initial display of images. Animate scroll to the image currently selected.
  */
 Coverflow.prototype.init = function() {
-  let images = this.images;
-  let current = this.settings.current;
+    let images = this.images;
+    let current = this.settings.current;
 
-  // Temporarily set the current image to -1 to show all
-  // images in a starting position
-  this.settings.current = -1;
+    // Temporarily set the current image to -1 to show all
+    // images in a starting position
+    this.settings.current = -1;
 
-  for (let i = images.length - 1; i >= 0; i--) {
-    this.updatePosition(i);
-  }
-
-  // Delay before showing the images in their starting position
-  setTimeout(() => {
-    this.root.className += 'plugin-coverflow';
-
-    if (current >= 0 && current < images.length) {
-      // Short delay before presenting the images in their actual position
-      // (per the settings.current value). If value of settings.current is out
-      // of bounds, then settings.current is left with a value of -1.
-      setTimeout(() => {
-        this.settings.current = current;
-        for (let i = images.length - 1; i >= 0; i--) {
-          this.updatePosition(i);
-        }
-      }, 500);
+    for (let i = images.length - 1; i >= 0; i--) {
+        this.updatePosition(i);
     }
-  }, 500);
+
+    // Delay before showing the images in their starting position
+    setTimeout(() => {
+        this.root.className += 'plugin-coverflow';
+
+        if (current >= 0 && current < images.length) {
+            // Short delay before presenting the images in their actual position
+            // (per the settings.current value). If value of settings.current is out
+            // of bounds, then settings.current is left with a value of -1.
+            setTimeout(() => {
+                this.settings.current = current;
+                for (let i = images.length - 1; i >= 0; i--) {
+                    this.updatePosition(i);
+                }
+            }, 500);
+        }
+    }, 500);
 }
 
 /*
@@ -102,12 +102,12 @@ Coverflow.prototype.init = function() {
  * Sets the image at a specific index as current
  */
 Coverflow.prototype.moveTo = function(numIndex) {
-  let len = this.images.length;
-  this.settings.current = numIndex;
+    let len = this.images.length;
+    this.settings.current = numIndex;
 
-  for (let i = 0; i < len; i++) {
-    this.updatePosition(i);
-  }
+    for (let i = 0; i < len; i++) {
+        this.updatePosition(i);
+    }
 };
 
 /*
@@ -118,22 +118,26 @@ Coverflow.prototype.moveTo = function(numIndex) {
  * currently selected.
  */
 Coverflow.prototype.updatePosition = function(imgIdx) {
-  let settings = this.settings;
+    let settings = this.settings;
 
-  // Distance from image[i] to the current image
-  let dist = Math.abs(imgIdx - settings.current);
+    // Distance from image[i] to the current image
+    let dist = Math.abs(imgIdx - settings.current);
 
-  if (dist) {
-    let newPos = settings.gap * (dist - 1) + settings.centerGap;
-    let newAngle = settings.angleInactive;
+    if (dist) {
+        let newPos = settings.gap * (dist - 1) + settings.centerGap;
+        let newAngle = settings.angleInactive;
 
-    newPos = (imgIdx < settings.current) ? newPos *= -1 : newPos;
-    newAngle = (imgIdx > settings.current) ? newAngle *= -1 : newAngle;
-    this.updateInDom(imgIdx, false, newPos, newAngle);
-  } else {
-    // image[i] is the current image
-    this.updateInDom(imgIdx, true);
-  }
+        newPos = (imgIdx < settings.current)
+            ? newPos *= -1
+            : newPos;
+        newAngle = (imgIdx > settings.current)
+            ? newAngle *= -1
+            : newAngle;
+        this.updateInDom(imgIdx, false, newPos, newAngle);
+    } else {
+        // image[i] is the current image
+        this.updateInDom(imgIdx, true);
+    }
 }
 
 /*
@@ -146,11 +150,11 @@ Coverflow.prototype.updatePosition = function(imgIdx) {
  * Refresh the inline styles of an image in the DOM
  */
 Coverflow.prototype.updateInDom = function(imgIdx, isActive, newPos, newAngle) {
-  let settings = this.settings;
+    let settings = this.settings;
 
-  if (isActive) {
-    this.images[imgIdx].style = `transform: translateX(0) rotateY(0deg) translateZ(${settings.zActive}px)`;
-  } else {
-    this.images[imgIdx].style = `transform: translateX(${newPos}px) rotateY(${newAngle}deg)`;
-  }
+    if (isActive) {
+        this.images[imgIdx].setAttribute('style', `transform: translateX(0) rotateY(0deg) translateZ(${settings.zActive}px)`);
+    } else {
+        this.images[imgIdx].setAttribute('style', `transform: translateX(${newPos}px) rotateY(${newAngle}deg)`);
+    }
 }
