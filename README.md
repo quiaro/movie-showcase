@@ -47,7 +47,7 @@ $ npm run build
 
 ## Credits
 
-- Thanks to Joseph Khan for his ["coverflow ideas"](https://jbkflex.wordpress.com/2012/02/13/coverflow-animation-using-css3-3d-transformations-part1/)
+- Thanks to Joseph Khan for his [coverflow ideas](https://jbkflex.wordpress.com/2012/02/13/coverflow-animation-using-css3-3d-transformations-part1/).
 
 ---
 
