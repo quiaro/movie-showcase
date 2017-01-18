@@ -18,7 +18,6 @@ with open(data_file) as data:
     all_data = json.load(data)
 
 # Sort movies by their title
-# sorted_movies = sorted(all_data, key=lambda k: k['title'])
 sorted_movies = sorted(all_data['movies'], key=operator.itemgetter('title'))
 
 # Extract the information of the 'movies' attribute in the JSON object.
