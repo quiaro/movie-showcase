@@ -54,7 +54,7 @@ Coverflow.prototype.getCurrentImage = function() {
 }
 
 /*
- * @method getCurrent
+ * @method getCurrentIndex
  * Get index to the currently selected image (zero-indexed)
  */
 Coverflow.prototype.getCurrentIndex = function() {
