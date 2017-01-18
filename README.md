@@ -23,6 +23,11 @@ Clone this repo to a folder in your computer.
 $ git clone https://github.com/quiaro/movie-showcase.git
 ```
 
+Go to the project directory.
+```
+$ cd movie-showcase
+```
+
 Install project dependencies.
 ```
 $ npm install
@@ -31,12 +36,7 @@ $ npm install
 ---
 
 ## Usage
-Make sure you have python 2 installed.
-
-Go to the project directory.
-```
-$ cd movie-showcase
-```
+Make sure you are in the project directory and that you have python 2 installed.
 
 Build the project. This should automatically open a local HTML file in your default browser with a selected list of movies. Enjoy!
 ```
