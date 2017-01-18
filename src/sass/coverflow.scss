@@ -8,8 +8,8 @@
     height: 200px;
     position: relative;
     margin: 50px auto;
-    -webkit-perspective: 1100;
-    transform-style: preserve-3d;
+    perspective: 1100px;
+    transform-style: preserve-3d;    
 }
 
 .plugin-coverflow img {
